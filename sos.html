@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astra SOS</title>
+    <link rel="stylesheet" href="./css/sos.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>Emergency SOS</h1>
+            <p>Press only during an emergency situation</p>
+        </div>
+
+        <div class="sos-section">
+
+            <button id="sosButton" onclick="triggerSOS()">
+                SOS
+            </button>
+
+            <div id="statusCard" class="status-card hidden">
+                <h2>🚨 SOS Activated</h2>
+                <p>Emergency alert has been triggered.</p>
+            </div>
+
+        </div>
+
+        <div class="info-card">
+            <h3>What Happens Next?</h3>
+
+            <ul>
+                <li>Emergency signal is activated</li>
+                <li>Location will be captured</li>
+                <li>Emergency contacts will be notified</li>
+                <li>Incident will be logged</li>
+            </ul>
+        </div>
+
+        <div class="back-btn">
+            <a href="dashboard.html">← Back to Dashboard</a>
+        </div>
+
+    </div>
+
+    <script src="./js/sos.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astra - Emergency Contacts</title>
+    <link rel="stylesheet" href="./css/contacts.css">
+</head>
+<body>
+    <script src="./js/theme.js"></script>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>Emergency Contacts</h1>
+            <p>Add trusted contacts for emergency situations</p>
+        </div>
+
+        <div class="contact-form">
+
+            <input type="text" id="name" placeholder="Contact Name">
+
+            <input type="tel" id="phone" placeholder="Phone Number">
+
+            <input type="text" id="relation" placeholder="Relation">
+
+            <button onclick="addContact()">
+                Add Contact
+            </button>
+
+        </div>
+
+        <div class="contacts-list">
+
+            <h2>Saved Contacts</h2>
+
+            <div id="contactsContainer"></div>
+
+        </div>
+
+        <div class="back-btn">
+            <a href="dashboard.html">← Back to Dashboard</a>
+        </div>
+
+    </div>
+
+    <script src="./js/contacts.js"></script>
+
+</body>
+</html>

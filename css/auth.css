@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f5f9ff;
+}
+
+.container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.login-card{
+    width:100%;
+    max-width:450px;
+    background:white;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+.logo{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.logo h1{
+    color:#2563eb;
+    margin-bottom:10px;
+    letter-spacing:2px;
+}
+
+.logo p{
+    color:#666;
+}
+
+.input-group{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:20px;
+}
+
+.input-group label{
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.input-group input{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    font-size:16px;
+}
+
+.input-group input:focus{
+    border-color:#2563eb;
+    box-shadow:0 0 10px rgba(37,99,235,.15);
+}
+
+.login-btn{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:#2563eb;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.login-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(37,99,235,.25);
+}
+.extra-links{
+    margin-top:15px;
+    text-align:center;
+}
+
+.extra-links a{
+    text-decoration:none;
+    color:#2563eb;
+}
+
+.signup-text{
+    text-align:center;
+    margin-top:20px;
+}
+
+.signup-text a{
+    color:#2563eb;
+    text-decoration:none;
+    font-weight:bold;
+}
+.theme-toggle{
+    position:fixed;
+    top:20px;
+    right:20px;
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:50%;
+    cursor:pointer;
+    font-size:18px;
+    background:#2563eb;
+    color:white;
+}
+
+.dark-mode{
+    background:#111827;
+    color:white;
+}
+
+.dark-mode .login-card,
+.dark-mode .signup-card{
+    background:#1f2937;
+    color:white;
+}
+
+.dark-mode input{
+    background:#374151;
+    color:white;
+    border:1px solid #555;
+}
